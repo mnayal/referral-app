@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Setup for running application locally:
 
-Things you may want to cover:
+- Install ruby using rvm or any other method - ruby-3.0.1
 
-* Ruby version
+- Install rails using command - gem install rails -v 7.0.1
 
-* System dependencies
+- Install Yarn and run command - yarn install
 
-* Configuration
+- Install mysql locally and an query interface of choice like TablePlus
 
-* Database creation
+- run command - bin/setup ( This will install all system dependencies and prepare database by running migrations )
 
-* Database initialization
+- run command - bin/dev ( This will start backend server as well as yarn watcher for UI changes )
 
-* How to run the test suite
+- Access the app on your browser at localhost:3000
 
-* Services (job queues, cache servers, search engines, etc.)
+- Install mailhog ( email testing tool, with a web UI to view outgoing emails )
 
-* Deployment instructions
+- Run mailhog using command - mailhog
 
-* ...
+- Access mailhog UI on your browser at localhost:8025
